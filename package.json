@@ -1,0 +1,16 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "description": "String Calculator TDD implementation",
+  "main": "src/stringCalculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Haresh Parmar",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.0.5"
+  },
+  "type": "commonjs"
+}
