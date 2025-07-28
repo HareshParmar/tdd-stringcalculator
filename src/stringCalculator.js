@@ -12,8 +12,14 @@ function add(numbers) {
   }
   
   const parts = numberPart.split(delimiter);
-  
-  return parts.reduce((sum, num) => sum + parseInt(num), 0);
+  const nums =  parts.map( num => parseInt(num));
+
+  const negativeNums = nums.filter(num => num < 0);
+  if(negativeNums.length > 0) {
+    throw new Error(`negative numbers not allowed: ${negativeNums.join(", ")}`);
+  }
+
+  return nums.reduce((sum, num) => sum + num, 0);
 }
 
 module.exports = { add };
